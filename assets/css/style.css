@@ -17,7 +17,6 @@ body {
 }
 .topnav {
     overflow: hidden;
-    background-color: #ffffff;
     margin: auto;
     width: 960px;
   }
@@ -34,6 +33,7 @@ body {
   .float-right {
       float: right;
       padding-top: 15px;
+      margin-right: -16px;
   }
 
   .topnav span {
@@ -59,8 +59,6 @@ body {
   .main-content {
     background-color: #ffffff;
     width: 960px;
-    min-height: 100%;
-    margin-bottom: -50px;
     margin: 30px auto 60px auto;
     border: #dddddd solid 2px;
     position: relative;
@@ -98,15 +96,46 @@ body {
   }
 
  
-footer {
-  text-align: center;
-  background-color: #666666;
-  padding: 20px 0;
-  color: white;
-  border-top: 8px solid #4aaaa5;
-  position: fixed;
+
+/* Portfolio Section */
+.portfolio-content {
+ background-color: white;
+ min-height: 950px;
+ width: 960px;
+ margin: 30px auto 200px auto;
+ border: #dddddd solid 2px;
+
+}
+
+.grid-content {
+  width: 80%;
+  margin-left: 25px;
+  position: relative;
+}
+
+.img-container {
+  position: relative;
+}
+
+.portfolio-img1 {
+ padding: 30px 30px 30px 0;
+ float: left;
+}
+
+.top-left {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.text1 {
+  position: absolute;
   bottom: 0;
-  width: 100%;
+}
+
+.text2 {
+  position: absolute;
 }
 
 /* Contact Section  */
@@ -142,4 +171,18 @@ input[type=submit] {
   border: none;
   border-radius: 0;
   cursor: pointer;
+  font-size: 15px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  background-color: #666666;
+  color: white;
+  padding: 5px 0;
+  border-top: 8px solid #4aaaa5;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
